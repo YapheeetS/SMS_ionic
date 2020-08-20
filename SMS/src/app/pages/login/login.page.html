@@ -1,0 +1,38 @@
+<ion-content class="ion-padding">
+  <!-- logo -->
+  <div class="lanch">
+    <ion-img class="lanchlogo" alt="fail" src="/assets/image/signup_logo.png"></ion-img>
+  </div>
+
+  <ion-item class="input">
+    <ion-icon class="inputicon" slot="start" color="dark" name="person"></ion-icon>
+    <ion-label class="mylabel" position="floating">Email address</ion-label>
+    <ion-input class="myinput" type="text" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item class="input">
+    <ion-icon class="inputicon" slot="start" color="dark" name="key"></ion-icon>
+    <ion-label class="mylabel" position="floating">Password</ion-label>
+    <ion-input [type]="showPassword ? 'text':'password'" [(ngModel)]="password"></ion-input>
+    <ion-icon class="eye" slot="end" [name]="passwordToggleIcon" (click)="togglePassword()"></ion-icon>
+  </ion-item>
+
+  <ion-button class="login-btn" fill="solid" color="dark" (click)="login()">LOGIN</ion-button>
+
+  <div class="forgetpassword">
+    <p>Forget Password?</p>
+  </div>
+
+
+  <div class="g">
+    <firebase-ui
+    (signInSuccessWithAuthResult)="successCallback($event)"
+    (signInFailure)="errorCallback($event)">
+    </firebase-ui>
+  </div>
+
+  <div class="signup">
+    <p>Don't Have An Account?</p>
+    <ion-button class="sign" fill="clear" [routerLink]="['../register']">SIGN UP</ion-button>
+  </div>
+</ion-content>

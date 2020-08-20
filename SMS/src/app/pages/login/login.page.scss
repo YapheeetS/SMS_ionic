@@ -1,0 +1,105 @@
+.lanchlogo{
+    width: 30%;
+}
+.lanch{
+    width: 100%;
+    margin-bottom: 15%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.eye{
+    padding-top: 18px;
+    font-size: 15pt;
+}
+
+ion-icon.inputicon{
+    margin: 22px 15px 0px 0px;
+    padding: 0px;
+}
+
+ion-item.input{
+    --highlight-height: 0;
+    width: 85%;
+    margin: 0px auto;
+}
+.mylabel{
+    padding-top: 4px;
+    font-size: 11pt;
+    color: #979797;
+}
+
+.login-btn{
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+    font-size: 10pt;
+    width: 135px;
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 0px 15px 0px 15px;
+}
+
+.forgetpassword{
+    margin-left: 10%;
+    margin-top: 20px;
+    font-size: 10pt;
+    color: rgb(148, 148, 148);
+}
+
+// --or--
+.order{
+    padding-top: 10px;
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    .line{
+        display: inline-block;
+        width: 90px;
+        border-top: 1px solid #ccc;
+    }
+    .txt{
+        color: rgb(148, 148, 148);
+        vertical-align: -4px;
+        font-size: 9pt;
+        margin: 0px 7px 0px 7px;
+    }
+}
+
+.g{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    ion-button{
+        --border-radius: 2px;
+        --box-shadow: none;
+        width: 72%;
+        height: 40px;
+        font-size: 10pt;
+        ion-icon{
+            margin-right: 30px;
+            width: 12%;
+        }
+    }
+}
+
+
+.signup{
+    padding-top: 12%;
+    margin: 0px auto;
+    width: 90%;
+    text-align: center;
+    p{
+        font-size: 9pt;
+        color: rgb(148, 148, 148);
+        letter-spacing: 1%;
+        margin: 0.5px;
+    }
+    .sign{
+        font-weight: 600;
+        font-size: 12.5pt;
+        color: black;
+        --background-hover: white;
+        --ripple-color: white;
+    }
+}
